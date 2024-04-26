@@ -11,7 +11,7 @@
           </elementProp>
           <elementProp name="client_secret" elementType="Argument">
             <stringProp name="Argument.name">client_secret</stringProp>
-            <stringProp name="Argument.value">8fZCfRYkScRCu6WhHuwOE23pT7vKCJSW</stringProp>
+            <stringProp name="Argument.value">1jAWG98E3QWrYwjpH25sKFa8f7TGaBP1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="grant_type" elementType="Argument">
@@ -34,7 +34,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Keycloak - Token">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Keycloak - Token" enabled="true">
           <stringProp name="HTTPSampler.domain">svc-login.ns-login.svc.cluster.local</stringProp>
           <stringProp name="HTTPSampler.port">7080</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -194,7 +194,7 @@
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Product - Get">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Product - Get" enabled="true">
           <stringProp name="HTTPSampler.domain">localhost</stringProp>
           <stringProp name="HTTPSampler.port">5000</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -272,7 +272,7 @@
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="Token - Results" enabled="true">
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="Token - Results">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -309,7 +309,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
